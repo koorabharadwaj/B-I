@@ -1,17 +1,12 @@
 
-
-def palindrome(num):
-    original = num
-    rev = 0
-
-    while num > 0:
-        digit = num % 10
-        rev = rev * 10 + digit
-        num = num // 10
-
-    if original == rev:
-        print("Palindrome")
-    else:
-        print("Not a palindrome")
-n = int(input("Enter a number: 121"))
-palindrome(n)
+a = int(input("Enter a number: "))
+num = a
+rev = 0
+while a!=0:
+    rem = a%10
+    rev = rev*10 + rem
+    a = a//10
+if rev == num:
+    print(f'{num} is a palindrome')
+else:
+    print(f'{num} is not a palindrome')
